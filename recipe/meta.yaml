@@ -1,13 +1,13 @@
 {% set name = "django-cities" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-cities-{{ version }}.tar.gz
-  sha256: d84363acb060cfccd9b2aa57296dfee5eb85334b2c04f5b78deebf549752e2f7
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 0f5113cbd9ed156a3e50cc5cdc41e14a3d10ac0942d4c861b77803d93cd336f7
 
 build:
   noarch: python
